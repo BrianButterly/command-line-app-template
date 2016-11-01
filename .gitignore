@@ -1,0 +1,4 @@
+/vendor
+default_volume/*
+.idea/
+.DS_Store
