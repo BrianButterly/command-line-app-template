@@ -10,7 +10,7 @@
 		}
 	],
 	"require-dev": {
-		"symfony/console": "^2.0",
+		"symfony/console": "3.*",
 		"rych/bytesize": "^1.0"
 	},
 	"autoload": {
