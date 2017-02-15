@@ -2,7 +2,11 @@
 	"name": "dkoval/clat",
 	"description": "The simple command-line app which describes how to build simple command-line app using the symfony/console component.",
 	"require": {
-		"symfony/console": "~2.0",
+		"symfony/console": "^2.0",
+		"rych/bytesize": "^1.0"
+	},
+	"require-dev": {
+		"symfony/console": "^2.0",
 		"rych/bytesize": "^1.0"
 	},
 	"autoload": {
