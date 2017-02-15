@@ -9,10 +9,6 @@
 			"homepage": "https://github.com/dtkoval"
 		}
 	],
-	"require": {
-		"symfony/console": "^2.0",
-		"rych/bytesize": "^1.0"
-	},
 	"require-dev": {
 		"symfony/console": "^2.0",
 		"rych/bytesize": "^1.0"
