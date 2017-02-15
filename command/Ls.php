@@ -15,7 +15,7 @@ class Ls extends Command
 {
     const COMMAND_NAME = 'ls';
     const COMMAND_DESCRIPTION = 'List of files';
-    const STORAGE_PATH = __DIR__ . '/../default_volume/';
+    const STORAGE_PATH = __DIR__ . '/../default_path/';
     private $exclude_files = ['.', '..'];
     private $columns = [
         'name',
