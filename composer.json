@@ -1,6 +1,14 @@
 {
 	"name": "dkoval/clat",
+	"type": "library",
 	"description": "The simple command-line app which describes how to build simple command-line app using the symfony/console component.",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Dmitry Koval",
+			"homepage": "https://github.com/dtkoval"
+		}
+	],
 	"require": {
 		"symfony/console": "^2.0",
 		"rych/bytesize": "^1.0"
