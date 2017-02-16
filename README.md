@@ -2,18 +2,22 @@
 
 Simple command-line app template.
 
+## Installation
+
+#### Globally
+```
+composer global require dkoval/clat
+```
+This way you will be able to use this utility from anywhere.
+#### Locally
+```
+composer require dkoval/clat
+```
+
 ## Usage
 
 ```
-./clat hello <your-name>
-```
-
-## Global install (mac)
-
-If you want to use this command from anywhere on your mac, you can add the following row into your .bash_profile
-
-```
-alias clat=~/path/to/your/command-line-app-template/clat
+clat ls
 ```
 
 <br>

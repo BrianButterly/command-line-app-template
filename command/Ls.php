@@ -15,7 +15,7 @@ class Ls extends Command
 {
     const COMMAND_NAME = 'ls';
     const COMMAND_DESCRIPTION = 'List of files';
-    const STORAGE_PATH = __DIR__ . '/../default_path/';
+    //const STORAGE_PATH = __DIR__ . '/../default_path/';
     private $exclude_files = ['.', '..'];
     private $columns = [
         'name',
@@ -65,7 +65,7 @@ class Ls extends Command
     private function getFiles()
     {
         $files = array_filter(
-            scandir(static::STORAGE_PATH),
+            scandir($this->getStoragePath()),
             function($file) {
                 if (in_array($file, $this->exclude_files))
                     return false;
@@ -74,10 +74,14 @@ class Ls extends Command
         );
 
         $this->files = array_map(function ($file) {
-            return new File(static::STORAGE_PATH . $file);
+            return new File($this->getStoragePath() . $file);
         }, $files);
     }
-    
+
+    private function getStoragePath()
+    {
+        return $_SERVER['PWD'] . '/';
+    }
 
     private function sort($orderBy, $orderAs)
     {
